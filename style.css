@@ -9,9 +9,10 @@ h1 {
   padding-top: 50px;
 }
 
-h2,
-h4 {
+a {
   color: #6070ff;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .container {
@@ -45,7 +46,7 @@ header {
   margin-bottom: 4px;
 }
 
-section {
+#hello {
   width: 327px;
   height: 150px;
   font-family: 'Roboto', sans-serif;
