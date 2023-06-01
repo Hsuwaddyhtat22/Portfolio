@@ -1,9 +1,16 @@
 h1 {
   font-family: 'Geologica', sans-serif;
+  font-size: 40px;
+  color: #344563;
   padding-left: 25px;
 }
 
-h2 {
+#ma {
+  padding-top: 50px;
+}
+
+h2,
+h4 {
   color: #6070ff;
 }
 
@@ -18,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 23px;
+  padding: 0 23px 0 25px;
 }
 
 .hamburger {
@@ -26,7 +33,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  width: 25px;
   height: 20px;
   cursor: pointer;
 }
@@ -43,7 +50,7 @@ section {
   height: 150px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  padding-top: 33px;
+  padding-top: 25px;
   padding-left: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -55,31 +62,35 @@ section {
   flex-grow: 0;
 }
 
-p {
+h4 {
   width: 200px;
   height: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-left: 25px;
-  padding-top: 50px;
   line-height: 24px;
   font-size: 16px;
   font-weight: 900;
   display: flex;
   align-items: center;
-  color: #7f8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.vector {
-  width: 2700px;
+ul.social-icons {
+  list-style: none;
+  display: flex;
 }
 
-.vector li {
-  padding: 8px;
+ul li.bird {
+  padding: 0;
+  margin: 0;
 }
 
-.vector ul li {
-  display: inline-flex;
+ul.social-icons li {
+  margin: 2px 12px;
+}
+
+ul.social-icons li a {
+  display: inline-block;
 }
