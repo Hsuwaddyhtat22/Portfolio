@@ -186,7 +186,7 @@ img .move {
   margin-top: 50px;
 }
 
-.grap {
+#grip {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
