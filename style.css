@@ -5,6 +5,14 @@ h1 {
   padding-left: 25px;
 }
 
+h5 {
+  font-family: 'Geologica', sans-serif;
+  font-size: 40px;
+  color: #344563;
+  padding-left: 25px;
+  line-height: 4px;
+}
+
 #ma {
   padding-top: 50px;
 }
@@ -117,12 +125,28 @@ ul li.bird {
 .title li {
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 6px;
+  color: #7a869a;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.title .dark {
+  color: #344563;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .categories li {
   display: inline;
   margin: 3px;
+}
+
+.categories button {
+  color: #6070ff;
+  border-radius: 7px;
+  border: none;
+  padding: 6px;
 }
 
 ul.social-icons li {
@@ -144,7 +168,7 @@ ul.social-icons li a {
 
 .sec {
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 pre {
