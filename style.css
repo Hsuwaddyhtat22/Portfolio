@@ -229,6 +229,12 @@ img .sec {
   font-weight: bold;
 }
 
+.categories li:hover {
+  background-color: #6070ff;
+  color: #fff;
+  font-weight: bold;
+}
+
 #final {
   margin-top: 100px;
 }
@@ -246,7 +252,11 @@ img .move {
 }
 
 #need li {
-  padding-bottom: 10px;
+  padding-bottom: 13px;
+}
+
+#last {
+  margin-top: 80px;
 }
 
 #grip {
@@ -254,4 +264,23 @@ img .move {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+}
+
+.ChDown {
+  width: 30px;
+  height: 20px;
+  margin-left: 130px;
+}
+
+.Right {
+  width: 30px;
+  height: 20px;
+  margin-left: 200px;
+}
+
+.left {
+  width: 30px;
+  height: 20px;
+  display: inline;
+  margin-left: 129px;
 }
