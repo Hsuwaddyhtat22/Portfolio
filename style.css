@@ -19,10 +19,6 @@ h5 {
   padding-left: 16px;
 }
 
-#ma {
-  padding-top: 50px;
-}
-
 #Logo {
   color: #6070ff;
   font-size: 27px;
@@ -129,7 +125,7 @@ header {
   font-size: 19px;
 }
 
-#hello {
+.hello {
   width: 327px;
   height: 150px;
   font-size: 20px;
@@ -320,10 +316,6 @@ img .move {
   padding-bottom: 13px;
 }
 
-#last {
-  margin-top: 80px;
-}
-
 #grip {
   margin: auto;
   display: grid;
@@ -505,154 +497,150 @@ textarea::placeholder {
     justify-content: end;
     margin-left: 80px;
   }
-}
 
-#ma {
-  padding-top: 100px;
-  padding-left: 200px;
-}
+  #ma {
+    padding-top: 100px;
+    padding-left: 200px;
+  }
 
-h2 {
-  color: white;
-  text-align: center;
-  padding-top: 90px;
-  font-size: 30px;
-  font-weight: bolder;
-}
+  #htwo {
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
 
-#hello {
-  width: 90%;
-  padding-left: 200px;
-  padding-top: 20px;
-}
+  #tag {
+    width: 90%;
+    padding-left: 200px;
+    padding-top: 20px;
+  }
 
-.version2 .sec {
-  float: left;
-  margin: 10px 20px 20px 0;
-  width: 544px;
-  height: 448px;
-}
+  #two .sec {
+    float: left;
+    margin: 10px 20px 20px 0;
+    width: 544px;
+    height: 448px;
+  }
 
-h4 {
-  position: relative;
-  bottom: 150px;
-  margin-left: 175px;
-}
+  #connect {
+    position: relative;
+    bottom: 150px;
+    margin-left: 175px;
+  }
 
-.social-icons {
-  position: relative;
-  bottom: 150px;
-  margin-left: 175px;
-}
+  #changes {
+    position: relative;
+    bottom: 130px;
+    margin-left: 0;
+  }
 
-.get-my-resume {
-  position: relative;
-  bottom: 145px;
-  left: 7px;
-  margin-bottom: 40px;
-}
+  .social-icons {
+    position: relative;
+    bottom: 150px;
+    margin-left: 175px;
+  }
 
-.version4 {
-  width: 1440px;
-  height: 569px;
-  border-top-right-radius: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  .get-my-res {
+    position: relative;
+    bottom: 145px;
+    left: 7px;
+    margin-bottom: 40px;
+  }
 
-.final-version > ul {
-  gap: 0;
-}
+  #four {
+    width: 1440px;
+    height: 569px;
+    border-top-right-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-#last {
-  margin-top: 10px;
-  margin-left: 5px;
-}
+  .final-version > ul {
+    gap: 0;
+  }
 
-#changes {
-  margin-left: 5px;
-  margin-top: 25px;
-}
+  #last {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
 
-.final-version {
-  margin-left: 15px;
-  position: relative;
-}
+  .final-version {
+    margin-left: 15px;
+    position: relative;
+  }
 
-.version2 {
-  width: 1156px;
-  height: 496px;
-}
+  #two {
+    width: 1156px;
+    height: 496px;
+  }
 
-.third {
-  width: 544px;
-  height: 448px;
-}
+  #three {
+    width: 544px;
+    height: 448px;
+  }
 
-.version2 .third {
-  float: right;
-  margin: 20px 20px 20px 20px;
-}
+  #two #three {
+    float: right;
+    margin: 20px 20px 20px 20px;
+  }
 
-.fourth {
-  width: 544px;
-  height: 448px;
-}
+  #fold {
+    width: 544px;
+    height: 448px;
+  }
 
-.version2 .fourth {
-  float: right;
-  margin: 20px 20px 20px 20px;
-}
+  #two #fold {
+    float: right;
+    margin: 20px 20px 20px 20px;
+  }
 
-.version2 .additional-tag {
-  position: absolute;
-  left: 100%;
-  top: 0;
-  margin-left: 10px;
-}
+  #two .additional-tag {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 10px;
+  }
 
-.version2 .card {
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-}
+  #two .card {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+  }
 
-.version3 {
-  width: 1156px;
-  height: 496px;
-}
+  .final-version #need {
+    margin-right: auto;
+  }
 
-.final-version #need {
-  margin-right: auto;
-}
+  .mouse {
+    width: 544px;
+    color: #344563;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
 
-#hell {
-  width: 544px;
-  color: #344563;
-  padding-left: 25px;
-  font-size: 20px;
-  font-weight: 700;
-}
+  .textal {
+    width: 50%;
+  }
 
-#align {
-  width: 50%;
-}
+  #spree #align {
+    color: white;
+  }
 
-.form-spree #align {
-  color: white;
-}
+  #spree {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 846px;
+    background-image: url(image/contact\ form\ background\ shapes.svg);
+  }
 
-.form-spree {
-  display: flex;
-  align-items: center;
-  width: 1440px;
-  height: 846px;
-  background-image: url(image/contact\ form\ background\ shapes.svg);
-}
-
-footer {
-  display: none;
+  footer {
+    display: none;
+  }
 }
