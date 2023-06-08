@@ -31,6 +31,7 @@ h5 {
   height: auto;
   padding-bottom: 30px;
   background-image: url(image/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
 }
 
 .nav-desk {
@@ -190,7 +191,7 @@ ul li.bird {
 .title li {
   display: flex;
   align-items: center;
-  margin: 6px;
+  margin: 5px;
   color: #7a869a;
   font-weight: bold;
 }
@@ -235,7 +236,7 @@ ul.icons li {
 }
 
 .title {
-  margin: 16px;
+  margin: 10px;
   display: flex;
 }
 
@@ -261,9 +262,10 @@ ul.icons li {
   border-color: #396df2;
   font-size: 20px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px 15px;
-  margin: 30px;
+  margin-left: 23px;
+  margin-bottom: 5px;
   color: #396df2;
 }
 
@@ -474,8 +476,8 @@ textarea::placeholder {
   .icons {
     margin-top: 0;
     position: relative;
-    bottom: 150px;
-    left: 7px;
+    bottom: 145px;
+    left: 100px;
   }
 
   h1 {
@@ -494,8 +496,18 @@ textarea::placeholder {
 
   .grape {
     display: flex;
-    justify-content: end;
-    margin-left: 80px;
+    margin-top: 80px;
+    margin-right: 300px;
+  }
+
+  .myself {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  #name {
+    width: 400px;
+    border-radius: none;
   }
 
   #ma {
@@ -507,14 +519,14 @@ textarea::placeholder {
     color: white;
     text-align: center;
     padding-top: 90px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
   }
 
   #tag {
     width: 90%;
     padding-left: 200px;
-    padding-top: 20px;
+    padding-top: 0;
   }
 
   #two .sec {
@@ -522,6 +534,28 @@ textarea::placeholder {
     margin: 10px 20px 20px 0;
     width: 544px;
     height: 448px;
+  }
+
+  .to-top {
+    margin-top: 120px;
+  }
+
+  .social-icons {
+    position: relative;
+    bottom: 170px;
+    margin-left: 175px;
+  }
+
+  .place .social-icons {
+    margin-top: 3px;
+  }
+
+  .space {
+    margin-right: 50px;
+  }
+
+  .wendy {
+    margin-left: 20px;
   }
 
   #connect {
@@ -533,26 +567,25 @@ textarea::placeholder {
   #changes {
     position: relative;
     bottom: 130px;
-    margin-left: 0;
+    margin-left: 100px;
   }
 
-  .social-icons {
-    position: relative;
-    bottom: 150px;
-    margin-left: 175px;
+  .disc {
+    margin-left: 5px;
+    margin-top: 50px;
   }
 
   .get-my-res {
     position: relative;
     bottom: 145px;
-    left: 7px;
-    margin-bottom: 40px;
+    left: 100px;
   }
 
   #four {
     width: 1440px;
     height: 569px;
-    border-top-right-radius: 60px;
+    border: none;
+    border-top-right-radius: 100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -606,6 +639,10 @@ textarea::placeholder {
     margin-left: 10px;
   }
 
+  .dis #seepj {
+    margin-top: 35px;
+  }
+
   #two .card {
     display: flex;
     position: absolute;
@@ -617,15 +654,21 @@ textarea::placeholder {
   }
 
   .mouse {
-    width: 544px;
     color: #344563;
+    width: 80%;
     padding-left: 25px;
+    margin-left: 100px;
     font-size: 20px;
     font-weight: 700;
   }
 
   .textal {
-    width: 50%;
+    width: 27%;
+  }
+
+  .botton {
+    margin-left: 120px;
+    margin-top: 0;
   }
 
   #spree #align {
@@ -638,6 +681,7 @@ textarea::placeholder {
     width: 1440px;
     height: 846px;
     background-image: url(image/contact\ form\ background\ shapes.svg);
+    border-top-left-radius: 100px;
   }
 
   footer {
