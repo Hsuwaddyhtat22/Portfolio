@@ -71,9 +71,12 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- -Live Demo is not available.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://hsuwaddyhtat22.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>

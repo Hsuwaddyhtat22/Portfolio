@@ -26,6 +26,10 @@
     font-weight: bold;
   }
 
+  #Logo:hover {
+    transform: scale(1.2);
+  }
+
   .container {
     flex-direction: column;
     width: 375px;
