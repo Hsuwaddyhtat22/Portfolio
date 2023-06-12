@@ -70,9 +70,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- -Live Demo is not available.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://hsuwaddyhtat22.github.io/Portfolio/">back to top</a>)</p>
 
 
 
