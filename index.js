@@ -1,18 +1,14 @@
-const Favicon = document.querySelector('.hamburger');
-const links = document.querySelectorAll('.nav-ham');
-const linksContainer = document.querySelector('.earth');
-const closeTag = document.querySelector('.close-tag');
-Favicon.addEventListener('click', () => {
-    linksContainer.classList.add('active')
-});
+const ham = document.querySelector(".hamburger");
+const links = document.querySelector(".earth");
 
-closeTag.addEventListener('click', ()=>{
+const closetag = document.querySelector(".close-tag");
+const navham = document.querySelectorAll(".nav-ham");
 
-    linksContainer.classList.remove('active')
+ham.addEventListener("click", () => {
+
+    links.classList.toggle("earthClose")
 })
-links.forEach((link) => {
-    link.addEventListener('click', () => {
-        linksContainer.classList.remove('active')
-     
-    });
-  });
+closetag.addEventListener("click", () => {
+
+    links.classList.toggle("earthClose")
+})
