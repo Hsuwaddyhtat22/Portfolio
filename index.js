@@ -128,4 +128,7 @@ seeProjectBtn2.addEventListener('click', () => {
 seeProjectBtn3.addEventListener('click', () => {
     ShowModal(2);
 });
+seeProjectBtn3.addEventListener('click', () => {
+    ShowModal(3);
+});
 
