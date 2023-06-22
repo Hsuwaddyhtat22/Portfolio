@@ -4,13 +4,13 @@ const navClose = document.querySelector('#nav-close');
 const yearLabel = document.querySelector('#year-label');
 const client = document.querySelector('#client');
 const role = document.querySelector('#role');
-const seeProjectBtn1 = document.querySelector('#see-project-btn-1');
-const seeProjectBtn2 = document.querySelector('#see-project-btn-2');
-const seeProjectBtn3 = document.querySelector('#see-project-btn-3');
-const seeProjectBtn4 = document.querySelector('#see-project-btn-4');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal-close');
 const menuitems = Array.from(document.querySelectorAll('.menu-items'));
+const projectimage = document.querySelector('.project-img');
+projectimage.style.width = '100%';
+projectimage.style.height = '700px';
+
 
 document.onkeydown = function(evt) {
     evt = evt || window.event;
@@ -116,19 +116,11 @@ function ShowModal(index) {
     role.textContent = project.role;
     yearLabel.textContent = project.year;
 }
+const seeProjectBtns = document.querySelectorAll('[id^="see-project-btn-"]');
 
-seeProjectBtn1.addEventListener('click', () => {
-    ShowModal(0);
-});
 
-seeProjectBtn2.addEventListener('click', () => {
-    ShowModal(1);
-});
-
-seeProjectBtn3.addEventListener('click', () => {
-    ShowModal(2);
-});
-
-seeProjectBtn4.addEventListener('click', () => {
-    ShowModal(3);
+seeProjectBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        ShowModal(index);
+    });
 });
