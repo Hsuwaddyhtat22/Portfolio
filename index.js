@@ -126,3 +126,44 @@ seeProjectBtns.forEach((btn, index) => {
         ShowModal(index);
     });
 });
+const form = document.getElementById('form');
+const emailInput = document.getElementById('email');
+const errMsg = document.getElementById('err-msg');
+const sentMsg = document.getElementById('sent-msg');
+
+const isEmailUpperCase = email => {
+    return email.toLowerCase() !== email;
+};
+
+const setErrorMsg = () => {
+    errMsg.classList.remove('hidden-msg');
+    sentMsg.classList.add('sent-msg');
+    emailInput.style.border = '3px solid red';
+};
+
+const resetForm = () => {
+    form.submit();
+    form.reset();
+};
+
+const setSuccessMsg = () => {
+    errMsg.classList.add('hidden-msg');
+    sentMsg.classList.remove('sent-msg');
+    emailInput.style.border = '3px solid green';
+    resetForm();
+};
+
+const handleFormSubmit = event => {
+    event.preventDefault();
+    const email = emailInput.value;
+    const shouldShowErrorMsg = isEmailUpperCase(email);
+    if (shouldShowErrorMsg) {
+        setErrorMsg();
+    } else {
+        setSuccessMsg();
+    }
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+    form.addEventListener('submit', handleFormSubmit);
+});
