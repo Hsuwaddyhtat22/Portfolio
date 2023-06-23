@@ -601,7 +601,7 @@ textarea::placeholder {
 }
 
 h2 {
-    color: white;
+    color: rgb(255, 243, 243);
     text-align: center;
     padding-top: 90px;
     font-size: 30px;
