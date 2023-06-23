@@ -87,6 +87,8 @@ const projects = [{
     },
 ];
 
+
+
 function ShowModal(index) {
     modal.classList.toggle('show');
     const modalHeader = document.querySelector('#modal-header');

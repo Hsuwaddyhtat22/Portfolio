@@ -824,4 +824,43 @@ h2 {
     .project-description {
         margin-bottom: 1em;
     }
+    #err-msg {
+        color: red;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 15px auto;
+        font-family: 'Inter', sans-serif;
+    }
+    #sent-msg {
+        color: green;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 15px auto;
+        font-family: 'Inter', sans-serif;
+    }
+    .hidden-msg {
+        display: none;
+    }
+    .sent-msg {
+        display: none;
+    }
+    #touch {
+        padding: 15px;
+        border: none;
+        border-radius: 9px;
+        margin-left: 27px;
+        color: #6070ff;
+        background-color: #fff;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+    .botton {
+        margin-left: 120px;
+        margin-top: 0;
+    }
+    .shape {
+        margin-left: 115px;
+        margin-top: 20px;
+    }
 }
