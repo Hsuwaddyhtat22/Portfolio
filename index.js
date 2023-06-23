@@ -1,126 +1,177 @@
-const navButton = document.querySelector('.menubar');
-const navList = document.querySelector('.nav-items');
-const navClose = document.querySelector('#nav-close');
-const yearLabel = document.querySelector('#year-label');
-const client = document.querySelector('#client');
-const role = document.querySelector('#role');
-const modal = document.querySelector('.modal');
-const modalClose = document.querySelector('.modal-close');
-const menuitems = Array.from(document.querySelectorAll('.menu-items'));
-const projectimage = document.querySelector('.project-img');
-projectimage.style.width = '100%';
-projectimage.style.height = '700px';
-
-
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    let isEscape = false;
-    if ('key' in evt) {
-        isEscape = (evt.key === 'Escape' || evt.key === 'Esc');
-    } else {
-        isEscape = (evt.keyCode === 27);
-    }
-    if (isEscape && modal.classList.contains('show')) {
-        modal.classList.toggle('show');
-    }
-};
-
-navButton.addEventListener('click', () => {
-    navList.classList.toggle('show');
-});
-navClose.addEventListener('click', () => {
-    navList.classList.toggle('show');
-});
-menuitems.forEach((item) => {
-    item.addEventListener('click', () => {
-        navList.classList.remove('show');
-    });
-});
-
-modalClose.addEventListener('click', () => {
-    modal.classList.toggle('show');
-});
-
-const projects = [{
-        name: 'Tonic',
+const details = [{
+        id: 1,
+        title: 'Tonic',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio1.png',
-        tech: ['HTML', 'CSS', 'JavaScript'],
-        client: 'CANOPY',
-        role: 'Back End Dev',
-        year: '2015',
-        link: '#',
-        source: '#',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        img: './images/work-1.png',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
     },
     {
-        name: 'Multi-Post Stories',
-        description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio2.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'FACEBOOK',
-        role: 'Full Stack Dev',
-        year: '',
+        id: 2,
+        title: 'Multi-Post Stories',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry,',
+        img: './images/work-2.png',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
     },
     {
-        name: 'Facebook 360',
-        description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio3.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'FACEBOOK',
-        role: 'Full Stack Dev',
-        year: '2015',
+        id: 3,
+        title: 'Tonic',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        img: './images/work-3.png',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
     },
     {
-        name: 'Uber Navigation',
-        description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio4.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'Uber',
-        role: 'Lead Developer',
-        year: '2018',
+        id: 4,
+        title: 'Multi-Post Stories',
+        platform: 'CANOPY',
+        stack: 'Back End Dev',
+        price: 2015,
+        img: './images/work4.png',
+        featuredimg: '/images/work4.png',
+
+        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        longdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        technology: ['HTML', 'CSS', 'Javascript'],
+        livelink: 'https://blessing-michael.github.io/portfolio/',
+        linkSource: 'https://github.com/blessing-michael/portfolio',
     },
 ];
 
-function ShowModal(index) {
-    modal.classList.toggle('show');
-    const modalHeader = document.querySelector('#modal-header');
-    const workSampleImage = document.querySelector('#work-sample-image');
-    const workDescription = document.querySelector('#work-description');
-    const techList = document.querySelector('#tech-list');
-    const btnSeeLive = document.querySelector('#btn-see-live');
-    const btnSeeSource = document.querySelector('#btn-see-source');
-    const project = projects[index];
+const Navicon = document.querySelector('.bar-div');
+const linksContainer = document.querySelector('.links-container');
+const closeIcon = document.querySelector('.close-icon');
+const allNavlinks = document.querySelectorAll('.nav-info');
+const popContainer = document.querySelector('.popup-Container');
+const worksec = document.getElementById('work');
+const error = document.querySelector('.error-message');
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
 
-    modalHeader.textContent = project.name;
-    workSampleImage.setAttribute('src', project.featuredImage);
-    workDescription.textContent = project.description;
-    btnSeeLive.setAttribute('href', project.link);
-    btnSeeSource.setAttribute('href', project.source);
-
-    techList.innerHTML = '';
-    project.tech.forEach((tech) => {
-        const li = document.createElement('li');
-        const span = document.createElement('span');
-        span.innerText = tech;
-        li.appendChild(span);
-        techList.appendChild(li);
-    });
-
-    client.textContent = project.client;
-    role.textContent = project.role;
-    yearLabel.textContent = project.year;
+function generateWork() {
+    let displayWork = details.map((work) => `  <article class="work">
+      <div class="img">
+        <img src=${work.img} alt=${work.title} class="work-img" />
+      </div>
+      <div class="works-info">
+        <h2 class="work-title">${work.title}</h2>
+        <div class="works-details">
+          <h4 class="work-canopy">${work.platform}</h4>
+          <p class="profession">
+            <span class="prof-span">
+              <img src="./images/Counter.png" alt="counter" /></span
+            >${work.stack}
+          </p>
+          <p class="profession">
+            <span class="prof-span">
+              <img src="./images/Counter.png" alt="counter" /></span>${work.price}
+          </p>
+        </div>
+        <p class="work-info">  ${work.description} </p>
+        <div class="tech-highligt">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+        </div>
+        <button class="tech-project-btn" type="submit" id=${work.id}>See project</button>
+      </div>
+    </article>`);
+    displayWork = displayWork.join('');
+    worksec.innerHTML = displayWork;
 }
-const seeProjectBtns = document.querySelectorAll('[id^="see-project-btn-"]');
+generateWork();
 
+const seeProject = document.querySelectorAll('.tech-project-btn');
+seeProject.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                        if (e.target.classList.contains('tech-project-btn')) {
+                            popContainer.style.display = 'block';
+                            const id = parseFloat(e.target.id);
+                            const search = details.find((x) => x.id === id);
 
-seeProjectBtns.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        ShowModal(index);
-    });
+                            if (search) {
+                                popContainer.innerHTML = `<div class="pop-up">
+        <div class="popup-info">
+        <i class="fa-solid fa-xmark pop-close"></i>
+          <h5 class="popup-h5">${search.title}</h5>
+          
+          <div class="pop-stack">
+             <div class="pop-stackname">
+              <p class="platform">${search.platform}</p>
+              <p class="pop-counter">  <span class="prof-span">
+              <img src="./images/Counter.png" alt="counter" /></span
+            >${search.stack}</p>
+              <p  class="pop-counter"> <span class="prof-span">
+              <img src="./images/Counter.png" alt="counter" /></span
+            >${search.price}</p>
+             </div>
+            
+            <div class="popup-img">
+              <img src=${search.img} < alt=${search.title} class="popup-image">
+            </div>
+            <div class="popup-description">
+             <div class="popup-p">
+            <p class="popup-pone">${search.longdescription}</p>
+           
+             </div>
+             <div >
+             <div class="popup-techstack">
+             ${search.technology.map((x) => `<p class="popup-pone">${x}</p>`).join('')}
+             
+             </div>
+            <div class="popup-btn">
+            <a href=${search.livelink} class="see-live"
+            ><img src="./images/Enabled1.png" alt="see live" class= "pop-enabled"
+          /></a>
+            <a href=${search.linkSource} class="see-live"
+             ><img src="./images/Enabled.png" class= "pop-enabled" alt="see live"
+          /></a>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+`;
+      }
+      const popClose = document.querySelector('.pop-close');
+      popClose.addEventListener('click', () => {
+        popContainer.style.display = 'none';
+      });
+    }
+  });
+});
+
+Navicon.addEventListener('click', () => {
+  linksContainer.classList.add('active');
+});
+
+function closeMenu() {
+  linksContainer.classList.remove('active');
+}
+closeIcon.addEventListener('click', () => {
+  closeMenu();
+});
+
+allNavlinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
 });
